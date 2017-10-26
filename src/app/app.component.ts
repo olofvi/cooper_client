@@ -12,7 +12,6 @@ export class MyApp {
 
   rootPage: any = HomePage;
 
-
   pages: Array<{title: string, component: any}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
@@ -40,3 +39,5 @@ export class MyApp {
     this.nav.setRoot(page.component);
   }
 }
+
+
