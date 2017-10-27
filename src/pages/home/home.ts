@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { PersonProvider } from '../../providers/person/person';
 
-
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -20,6 +19,7 @@ export class HomePage {
   calculate() {
     this.person.age = this.user.age;
     this.person.gender = this.user.gender;
+    console.log(this);
 
     this.person.doAssessment(this.user.distance);
     console.log(this.person.assessmentMessage);
