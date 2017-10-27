@@ -7,6 +7,10 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { PersonProvider } from '../providers/person/person';
 import { CooperProvider } from '../providers/cooper/cooper';
+import { HttpModule } from '@angular/http';
+import { RouterModule } from '@angular/router';
+import { Angular2TokenService } from 'angular2-token';
+import { PerformanceDataProvider } from '../providers/performance-data/performance-data';
 
 @NgModule({
   declarations: [
@@ -16,6 +20,8 @@ import { CooperProvider } from '../providers/cooper/cooper';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    HttpModule,
+    RouterModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -27,7 +33,9 @@ import { CooperProvider } from '../providers/cooper/cooper';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     PersonProvider,
-    CooperProvider
+    CooperProvider,
+    Angular2TokenService,
+    PerformanceDataProvider
   ]
 })
 export class AppModule {}

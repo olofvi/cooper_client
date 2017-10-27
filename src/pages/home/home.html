@@ -9,6 +9,15 @@
 
 <ion-content padding>
   <ion-list>
+    <ion-list>
+      ...
+      <button ion-item (click)="loginPopUp()" *ngIf="!currentUser">
+        Login
+      </button>
+      <button ion-item (click)="logout()" *ngIf="currentUser">
+        Logout {{currentUser.email}}
+      </button>
+    </ion-list>
     <ion-item>
       <ion-label floating>Distance</ion-label>
       <ion-input type="number" [(ngModel)]="user.distance"></ion-input>
