@@ -23,4 +23,8 @@ export class HomePage {
       .subscribe(data => console.log(data));
   }
 
+  showResults() {
+    this.modalCtrl.create(ResultsPage).present();
+  }
+
 }
