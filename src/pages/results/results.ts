@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { PerformanceDataProvider } from '../providers/performance-data/performance-data';
+import {PerformanceDataProvider} from '../../providers/performance-data/performance-data';
 
 /**
  * Generated class for the ResultsPage page.
@@ -22,7 +22,7 @@ export class ResultsPage {
   ) {}
 
   ionViewDidLoad() {
-    this.perfomanceData
+    this.performanceData
       .getResults()
       .subscribe(data => (this.results = data.entries));
   }

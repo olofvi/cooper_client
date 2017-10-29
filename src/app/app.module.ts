@@ -39,7 +39,6 @@ import { PerformanceDataProvider } from '../providers/performance-data/performan
     CooperProvider,
     Angular2TokenService,
     PerformanceDataProvider,
-    PerformanceDataProvider
   ]
 })
 export class AppModule {}
