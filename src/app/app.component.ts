@@ -3,7 +3,6 @@ import { Nav, Platform, AlertController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Angular2TokenService } from 'angular2-token';
-import { ..., AlertController } from 'ionic-angular';
 import { HomePage } from '../pages/home/home';
 
 @Component({
@@ -149,5 +148,3 @@ export class MyApp {
     this.nav.setRoot(page.component);
   }
 }
-
-
